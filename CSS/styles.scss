@@ -1,0 +1,169 @@
+/**
+* variables
+*/
+$border-color: #3a2b2baf;
+$main-background-color: hsl(0, 18%, 10%);
+$lighter-background-color: #332424af;
+$glow1: #a54343;
+$glow2: #5d43a5;
+
+/**
+* Fonts
+*/
+@font-face {
+    font-family: "kamikaze";
+    src: url("fonts/Kamikaze.ttf");
+}
+
+/**
+* Layout
+*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background: $main-background-color;
+  color: #fff;
+  display: grid;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+header {
+  width: 100ch;
+  margin: 0 auto;
+  height: 3rem;
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.siteName {
+    font-family: kamikaze;
+    font-size:1.5rem;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 40ch;
+}
+main {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.topArea {
+  display: flex;
+  width: 100ch;
+  margin: 0 auto;
+}
+.mainText {
+  font-size: 1.2rem;
+}
+.mainTitle {
+  max-width: 22ch;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin: 2ch 0;
+}
+.titleEmph {
+  display: inline-block;
+  background: $glow1;
+  border: 2px solid $border-color;
+
+  padding: 0.5ch 0.5ch 0.8ch 0.5ch;
+  margin-top: 0.5ch;
+  font-size: 3rem;
+  transform: rotate(-5deg);
+}
+.pitch {
+  max-width: 50ch;
+}
+p {
+  margin: 2ch 0;
+  line-height: 1.6rem;
+}
+.illustration {
+  width: 50ch;
+  //transform:rotate(35deg);
+  //background-image: url(../images/wagyu-steak-unsplash.png);
+  background-image: url(../images/wagyu-steak-unsplash.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 1ch 3ch;
+  margin-left: 3ch;
+}
+.cardArea {
+  width: 100%;
+  height: 31ch;
+  margin: 10ch 0;
+  background: $lighter-background-color;
+  border-top: 1px solid $border-color;
+}
+.cards {
+  max-width: 100ch;
+  margin: 0 auto;
+  display: flex;
+}
+.card {
+  position: relative;
+  top: -7ch;
+  padding: 2ch;
+  width: 26ch;
+  height: 35ch;
+  background: #ddd;
+  color: $main-background-color;
+  border: 1px solid $border-color;
+  box-shadow: 0 0 0.5ch 0.5ch $glow1;
+  border-radius: 1ch;
+  margin-right: 3ch;
+
+  button {
+    position: absolute;
+    bottom: 2ch;
+    width: 18ch;
+    height: 5ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2ch 0 0 0;
+    border-radius: 1ch;
+    background: $glow1;
+    color: #fff;
+    font-size: 1.4rem;
+    &:hover {
+      background: #fff;
+      color: $glow1;
+      cursor: pointer;
+      font-weight: 700;
+    }
+  }
+}
+.cardTitle {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 1ch;
+  font-weight: 700;
+}
+.cardPitch{
+    height: 20ch;
+    overflow: hidden;
+}
+.alternate {
+  box-shadow: 0 0 0.5ch 0.5ch $glow2;
+  button {
+    background: $glow2;
+    color: #fff;
+    font-size: 1.4rem;
+    &:hover {
+      background: #fff;
+      color: $glow2;
+      cursor: pointer;
+    }
+  }
+}
