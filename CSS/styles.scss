@@ -104,9 +104,10 @@ p {
   margin: 10ch 0;
   background: $lighter-background-color;
   border-top: 1px solid $border-color;
+  display: flex;
 }
 .cards {
-  max-width: 100ch;
+  //max-width: 100ch;
   margin: 0 auto;
   display: flex;
 }
@@ -166,4 +167,9 @@ p {
       cursor: pointer;
     }
   }
+}
+.pitch2{
+  margin-top: 2ch;
+  max-width: 41ch;
+  text-align: justify;
 }
