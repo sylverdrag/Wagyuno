@@ -2,8 +2,8 @@
 * variables
 */
 $border-color: #3a2b2baf;
-$main-background-color: hsl(0, 18%, 10%);
-$lighter-background-color: #271b1baf;
+$main-background-color: hsl(0, 17%, 8%);
+$lighter-background-color: rgb(40 28 28 / 33%);
 $glow1: #a54343;
 $glow2: #57a543;
 
@@ -76,7 +76,7 @@ main {
   margin: 5ch auto;
   font-size: 1.2rem;
 }
-.topArea {
+.topArea, .bottomArea {
   display: flex;
   width: 80ch;
   margin: 0 auto;
@@ -112,17 +112,29 @@ p {
 .illustration {
   width: 50ch;
   transform:rotate(5deg);
-  //background-image: url(../images/wagyu-steak-unsplash.png);
   background-image: url(../images/wagyu-steak-unsplash.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0ch 3ch;
   margin-left: 3ch;
 }
+.sushi {
+  width: 50ch;
+  background-image: url(../images/Wagyu-sushi.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0ch 2ch;
+  margin-left: 3ch;
+}
+.copy{
+  width: 50ch;
+  font-size:1.4rem;
+  text-align: justify;
+}
 .cardArea {
   width: 100%;
   height: 24ch;
-  margin: 8ch 0;
+  margin: 8ch 0 2ch 0;
   background: linear-gradient($lighter-background-color, $main-background-color);
   border-top: 1px solid $border-color;
   display: flex;
@@ -199,4 +211,9 @@ p {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
   }
+}
+.separator {
+  width:40ch;
+  height:0.4ch;
+  margin: 0 auto 3.5ch auto;
 }
