@@ -40,12 +40,16 @@ body {
 header {
   width: 80ch;
   margin: 0 auto;
-  height: 3rem;
-  border-bottom: 1px solid $border-color;
+  height: 4rem;
+  border-bottom: 2px solid $border-color;
+  background: $main-background-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
+  position:fixed;
+  left: calc(50% - 40ch);
+  z-index:2;
 }
 .siteName {
     font-family: kamikaze;
@@ -61,6 +65,7 @@ header {
     color: #fff;
     cursor: pointer;
     padding: 1ch;
+    font-size: 1.5rem;
     &:hover{
       background: $glow2;
     }
@@ -68,7 +73,7 @@ header {
 }
 main {
   width: 100%;
-  margin: 0 auto;
+  margin: 5ch auto;
   font-size: 1.2rem;
 }
 .topArea {
