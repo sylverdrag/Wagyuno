@@ -76,6 +76,11 @@ main {
   margin: 5ch auto;
   font-size: 1.2rem;
 }
+h2{
+  font-size: 2ch;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
 .topArea, .bottomArea {
   display: flex;
   width: 80ch;
@@ -206,11 +211,6 @@ p {
   margin-top: 2ch;
   max-width: 34ch;
   text-align: justify;
-  h2{
-    font-size: 2ch;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-  }
 }
 .separator {
   width:40ch;
