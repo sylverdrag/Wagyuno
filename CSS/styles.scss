@@ -49,7 +49,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   position:fixed;
   left: calc(50% - 40ch);
   z-index:2;
@@ -78,7 +78,7 @@ header {
 main {
   width: 100%;
   margin: 5ch auto;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 h2{
   font-size: 2ch;
@@ -117,7 +117,7 @@ h2{
   p {
     margin: 2ch 0;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -167,7 +167,7 @@ h2{
   top: -6.5ch;
   padding: 1.2ch;
   width: 20ch;
-  height: 26ch;
+  height: 27ch;
   background: $card-background;
   color: $card-color;
   border: 1px solid $border-color;
@@ -187,12 +187,12 @@ h2{
   button {
     position: absolute;
     bottom: 2ch;
-    width: 18ch;
-    height: 5ch;
+    width: 16ch;
+    height: 4ch;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2ch 0 0 2ch;
+    margin: 2ch 0 0 1.5ch;
     border-radius: 1ch;
     border:none;
     background: $glow1;
@@ -250,6 +250,6 @@ h2{
 .separator {
   width:20ch;
   height:0.4ch;
-  margin: 0ch auto 3.5ch auto;
+  margin: 1ch auto 3.5ch auto;
   border-color: $card-background;
 }
