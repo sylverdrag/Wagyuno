@@ -49,7 +49,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   position:fixed;
   left: calc(50% - 40ch);
   z-index:2;
@@ -78,7 +78,7 @@ header {
 main {
   width: 100%;
   margin: 5ch auto;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 h2{
   font-size: 2ch;
@@ -145,14 +145,14 @@ h2{
   p {
     margin: 2ch 0;
     line-height: 2rem;
-    font-size:1.4rem;
+    // font-size:1.4rem;
     text-align: justify;
   }
 }
 .cardArea {
   width: 100%;
   height: 24ch;
-  margin: 10ch 0 0ch 0;
+  margin: 8ch 0 0ch 0;
   background: linear-gradient(#4e222280, $main-background-color);
   border-top: 1px solid $card-background;
   display: flex;
@@ -167,7 +167,7 @@ h2{
   top: -6.5ch;
   padding: 1.2ch;
   width: 20ch;
-  height: 28ch;
+  height: 26ch;
   background: $card-background;
   color: $card-color;
   border: 1px solid $border-color;
@@ -192,7 +192,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2ch 0 0 0;
+    margin: 2ch 0 0 2ch;
     border-radius: 1ch;
     border:none;
     background: $glow1;
@@ -250,6 +250,6 @@ h2{
 .separator {
   width:20ch;
   height:0.4ch;
-  margin: 2ch auto 3.5ch auto;
+  margin: 0ch auto 3.5ch auto;
   border-color: $card-background;
 }
