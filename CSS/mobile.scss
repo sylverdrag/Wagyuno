@@ -178,7 +178,7 @@ h2{
   }
 
   button {
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,6 +188,7 @@ h2{
     background: $glow1;
     color: #fff;
     font-size: 1.4rem;
+    padding:0.5rem;
   }
 }
 .cardTitle {
