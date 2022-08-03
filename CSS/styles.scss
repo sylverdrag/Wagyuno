@@ -84,6 +84,7 @@ h2{
   font-size: 2ch;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
+  transform:scaleY(1.25);
 }
 .topArea, .bottomArea {
   display: flex;
@@ -106,18 +107,20 @@ h2{
   background: $titleEmph-color;
   border: 2px solid $border-color;
 
-  padding: 0.5ch 0.5ch 0.8ch 0.5ch;
-  margin: 1ch 3ch 0.5ch 3ch;
+  padding: 0.5ch 0.8ch 0.5ch 0.8ch;
+  margin: 0.8ch 3ch 1.5ch 3ch;
   font-size: 3rem;
   transform: rotate(-10deg);
 }
 .pitch {
   max-width: 50ch;
+  p {
+    margin: 2ch 0;
+    line-height: 2rem;
+    font-size: 1.6rem;
+  }
 }
-p {
-  margin: 2ch 0;
-  line-height: 1.6rem;
-}
+
 .illustration {
   width: 50ch;
   transform:rotate(5deg);
@@ -134,16 +137,22 @@ p {
   background-repeat: no-repeat;
   background-position: 0ch 2ch;
   margin-left: 3ch;
+  border-radius: 1ch;
 }
 .copy{
   width: 50ch;
-  font-size:1.4rem;
-  text-align: justify;
+  
+  p {
+    margin: 2ch 0;
+    line-height: 2rem;
+    font-size:1.4rem;
+    text-align: justify;
+  }
 }
 .cardArea {
   width: 100%;
   height: 24ch;
-  margin: 8ch 0 2ch 0;
+  margin: 10ch 0 0ch 0;
   background: linear-gradient(#4e222280, $main-background-color);
   border-top: 1px solid $card-background;
   display: flex;
@@ -155,7 +164,7 @@ p {
 }
 .card {
   position: relative;
-  top: -5ch;
+  top: -6.5ch;
   padding: 1.2ch;
   width: 20ch;
   height: 26ch;
@@ -165,9 +174,14 @@ p {
   box-shadow: 0.3ch 0.3ch 0.2ch 0.1ch $glow1;
   border-radius: 1ch;
   margin-right: 3ch;
+  p {
+    margin: 1ch 0;
+    line-height: 1.8rem;
+  }
   &:hover{
     transform:scale(1.05);
     transition: transform 700ms ease;
+    cursor: pointer;
   }
 
   button {
@@ -187,7 +201,6 @@ p {
     &:hover {
       background: #fff;
       color: $glow1;
-      cursor: pointer;
       font-weight: 700;
       transition: background 700ms ease;
       border: 1px solid $glow1;
@@ -224,6 +237,10 @@ p {
   margin-top: 2ch;
   max-width: 34ch;
   text-align: justify;
+  p {
+    margin: 1ch 0;
+    line-height: 1.8rem;
+  }
   p a{
     color:white;
     text-decoration:none;
@@ -233,4 +250,5 @@ p {
   width:20ch;
   height:0.4ch;
   margin: 0 auto 3.5ch auto;
+  border-color: $card-background;
 }
