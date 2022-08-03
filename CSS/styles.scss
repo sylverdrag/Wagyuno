@@ -158,9 +158,13 @@ p {
   background: $main-background-color;
   color: #eee;
   border: 1px solid $border-color;
-  box-shadow: 0 0 0.5ch 0.5ch $glow1;
+  box-shadow: 0 0 0.5ch 0.3ch $glow1;
   border-radius: 1ch;
   margin-right: 3ch;
+  &:hover{
+    transform:scale(1.05);
+    transition: transform 500ms ease;
+  }
 
   button {
     position: absolute;
@@ -195,7 +199,7 @@ p {
     overflow: hidden;
 }
 .alternate {
-  box-shadow: 0 0 0.5ch 0.5ch $glow2;
+  box-shadow: 0 0 0.5ch 0.3ch $glow2;
   button {
     background: $glow2;
     color: #fff;
@@ -211,9 +215,13 @@ p {
   margin-top: 2ch;
   max-width: 34ch;
   text-align: justify;
+  p a{
+    color:white;
+    text-decoration:none;
+  }
 }
 .separator {
-  width:40ch;
+  width:20ch;
   height:0.4ch;
   margin: 0 auto 3.5ch auto;
 }
