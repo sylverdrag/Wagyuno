@@ -34,42 +34,39 @@ $glow2: rgb(119 170 190);
 body {
   background: $main-background-color;
   color: #fff;
-  display: grid;
+  display: block;
   font-family: "DM Sans", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 header {
-  width: 80ch;
-  margin: 0 auto;
+  width: 100%;
   height: 4rem;
   border-bottom: 2px solid $border-color;
   background: $main-background-color;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.2rem;
-  position:fixed;
-  left: calc(50% - 40ch);
+  font-size: 1rem;
   z-index:2;
 }
 .siteName {
     font-family: kamikaze;
-    font-size:1.5rem;
+    font-size:1.2rem;
     letter-spacing: 0.3ch;
+    width: 14rem;
     transform: skew(-10deg) scaleY(1.05);
+    margin:1rem auto;
 }
 .links {
   display: flex;
-  justify-content: space-between;
-  width: 40ch;
+  justify-content: space-around;
+  width:22rem;
+  margin: 0 auto;
   p a{
     text-decoration: none;
     color: #fff;
     cursor: pointer;
     padding: 1ch;
-    font-size: 1.5rem;
+    font-size: 1rem;
     &:hover{
       background: $glow2;
     }
@@ -77,58 +74,63 @@ header {
 }
 main {
   width: 100%;
-  margin: 5ch auto;
+  margin: 1rem auto;
   font-size: 1.2rem;
 }
 h2{
-  font-size: 2ch;
+  font-size: 1.4ch;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
   transform:scaleY(1.25);
 }
 .topArea, .bottomArea {
   display: flex;
-  width: 80ch;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   margin: 0 auto;
 }
 .mainText {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .mainTitle {
-  max-width: 20ch;
-  font-size: 3rem;
+  max-width: 320px;
+  font-size: 1.8rem;
   font-weight: 700;
-  line-height: 2.5rem;
-  margin: 1.3ch 0;
+  line-height: 1.8rem;
+  margin: 0.5rem auto;
   font-family: 'Courier New', Courier, monospace;
 }
 .titleEmph {
   display: inline-block;
   background: $titleEmph-color;
   border: 2px solid $border-color;
-
-  padding: 0.5ch 0.8ch 0.5ch 0.8ch;
-  margin: 0.8ch 3ch 1.5ch 3ch;
-  font-size: 3rem;
-  transform: rotate(-10deg);
+  padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+  margin: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 2rem;
+  transform: rotate(-5deg);
+  text-align: center;
 }
 .pitch {
-  max-width: 50ch;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
   p {
-    margin: 2ch 0;
-    line-height: 2rem;
-    font-size: 1.4rem;
+    margin: 2rem 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
   }
 }
 
 .illustration {
-  width: 50ch;
+  width: 40%;
+  aspect-ratio: 1.5;
+  margin: 0 auto;
   transform:rotate(5deg);
   background-image: url(../images/wagyu-steak-unsplash\ \(Small\).webp);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0ch 3ch;
-  margin-left: 3ch;
+  background-position: -2ch 0ch;
 }
 .sushi {
   width: 50ch;
@@ -140,85 +142,61 @@ h2{
   border-radius: 1ch;
 }
 .copy{
-  width: 50ch;
-  
+    max-width: 80%;
+    margin: 0 auto;
   p {
     margin: 2ch 0;
     line-height: 2rem;
-    // font-size:1.4rem;
     text-align: justify;
   }
 }
 .cardArea {
   width: 100%;
-  height: 24ch;
-  margin: 8ch 0 0ch 0;
-  background: linear-gradient(#4e222280, $main-background-color);
-  border-top: 1px solid $card-background;
-  display: flex;
+  min-height: 24ch;
+  margin: 4ch 0 0ch 0;
 }
 .cards {
-  //max-width: 100ch;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
 }
 .card {
   position: relative;
-  top: -6.5ch;
-  padding: 1.2ch;
-  width: 20ch;
-  height: 27ch;
+  width: 90%;
   background: $card-background;
   color: $card-color;
   border: 1px solid $border-color;
   box-shadow: 0.3ch 0.3ch 0.2ch 0.1ch $glow1;
   border-radius: 1ch;
-  margin-right: 3ch;
+  margin: 0 0 1rem 0;
   p {
-    margin: 1ch 0;
-    line-height: 1.7rem;
-  }
-  &:hover{
-    transform:scale(1.05);
-    transition: transform 400ms ease;
-    cursor: pointer;
+    margin: 0.5rem;
+    line-height: 1.3rem;
   }
 
   button {
-    position: absolute;
-    bottom: 2ch;
-    width: 16ch;
-    height: 4ch;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2ch 0 0 1.5ch;
+    margin: 1rem auto;
     border-radius: 1ch;
     border:none;
     background: $glow1;
     color: #fff;
     font-size: 1.4rem;
-    &:hover {
-      background: #fff;
-      color: $glow1;
-      font-weight: 700;
-      transition: background 700ms ease;
-      border: 1px solid $glow1;
-      cursor: pointer;
-    }
   }
 }
 .cardTitle {
-  font-size: 1.8rem;
-  line-height: 1.8rem;
-  margin-bottom: 1ch;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin: 1rem;
   font-weight: 700;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-}
-.cardPitch{
-    height: 20ch;
-    overflow: hidden;
 }
 .alternate {
   box-shadow: 0.3ch 0.3ch 0.2ch 0.1ch $glow2;
@@ -226,21 +204,14 @@ h2{
     background: $glow2;
     color: #fff;
     font-size: 1.4rem;
-    &:hover {
-      background: #fff;
-      color: $glow2;
-      cursor: pointer;
-      border: 1px solid $glow2;
-    }
   }
 }
-
 .pitch2{
-  margin-top: 2ch;
-  max-width: 34ch;
+  max-width: 80%;
+  margin: 1rem auto;
   text-align: justify;
   p {
-    margin: 1ch 0;
+    margin: 1rem 0;
     line-height: 1.8rem;
   }
   p a{
@@ -249,8 +220,8 @@ h2{
   }
 }
 .separator {
-  width:20ch;
-  height:0.4ch;
-  margin: 1ch auto 3.5ch auto;
+  width:10rem;
+  height:0.2rem;
+  margin: 0.5rem auto 2.5rem auto;
   border-color: $card-background;
 }
